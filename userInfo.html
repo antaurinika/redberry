@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./UserInfoStyle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <a href="./index.html">
+        <i class="fa-solid fa-angle-left back-btn"></i>
+      </a>
+      <div class="nav-container">
+        <a href="#" class="user-info">თანამშრომლების ინფო</a>
+        <a href="./laptop-specs.html" class="laptop-specs"
+          >ლეპტოპის მახასიათებლები</a
+        >
+        <p class="paging"></p>
+      </div>
+    </nav>
+
+    <div class="container">
+      <form class="form" id="form">
+        <div class="first-lastname">
+          <div class="form-control">
+            <label for="">სახელი</label>
+            <input type="text" id="fName" />
+            <small>მინიმუმ 2 სიმბოლო, ქართული ასოები</small>
+          </div>
+          <div class="form-control">
+            <label>გვარი</label>
+            <input type="text" id="lName" />
+            <small>მინიმუმ 2 სიმბოლო, ქართული ასოები</small>
+          </div>
+        </div>
+        <div class="drop-down">
+          <select name="team_id" class="select" id="team">
+            <option id="10">თიმი</option>
+            <small style="visibility: hidden"></small>
+          </select>
+          <small></small>
+        </div>
+        <div class="drop-down">
+          <select name="position_id" class="select" id="position">
+            <option>პოზიცია</option>
+            <!-- <option>ჯუნიორი</option>
+            <option>მიდლი</option>
+            <option>სენიორი</option>
+            <option>პროექტების მენეჯერი</option> -->
+          </select>
+          <small></small>
+        </div>
+        <div class="form-control">
+          <label>მეილი</label>
+          <input type="email" name="email" id="email" />
+          <small>უნდა მთავრდებოდეს @redberry.ge-ით</small>
+        </div>
+        <div class="form-control">
+          <label>ტელეფონის ნომერი</label>
+          <input type="tel" name="phone_number" id="phone" />
+          <small>უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</small>
+        </div>
+        <button class="blue-btn">შემდეგი</button>
+      </form>
+    </div>
+    <img src="./img/LOGO-10 2.png" alt="reberry-logo" class="redberry-logo" />
+
+    <script
+      src="https://kit.fontawesome.com/77d29a476f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./userInfo.js"></script>
+  </body>
+</html>

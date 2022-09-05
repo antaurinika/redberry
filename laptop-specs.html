@@ -1,0 +1,141 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./laptop-specs.css" />
+    <title>laptop</title>
+  </head>
+  <body>
+    <nav>
+      <a href="./index.html">
+     <i  class="fa-solid fa-angle-left back-btn"></i>
+      </a>
+      <div class="nav-container">
+        <a href="./userInfo.html" class="user-info" >თანამშრომლების ინფო</a>
+        <a href="#" class="laptop-specs">ლეპტოპის მახასიათებლები</a>
+        <p class="paging"></p>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="photo-container" id="photo-container">
+        <span class="upload-icon"></span>
+        <h1>ჩააგდე ან ატვირთე ლეპტოპის ფოტო</h1>
+        <label for="upload-btn" class="upload-label" ><span>ატვირთე</span> </label> 
+        <input type="file" name="laptop_image" class="upload-btn" id="upload-btn" accept="image/png, image/jpg">
+        
+        <small></small>
+      </div>
+
+      <form class="form" id="form">
+        <div class="brand">
+          <div class="form-control">
+            <label for="">ლეპტოპის სახელი</label>
+            <input type="text" name="laptop_name" id="brand" />
+            <small>ლათინური ასოები, ციფრები, !@#$%^&*()_+= </small>
+          </div>
+          <div class="form-control">
+            <label>
+              <span class="hidden-txt">ბრენდი</span>
+              <div class="dropdown">
+              <select id="brand-select" name="laptop_brand_id">
+              </select></label
+            >
+          <small></small>
+        </div>
+            <small class="hidden-txt">ბრენდი</small>
+          </div>
+        </div>
+        <span class="x-line"></span>
+
+        <div class="cpu">
+          <div class="form-control">
+            <label>პროცესორი </label>
+            <div class="dropdown">
+            <select id="cpu" name="laptop_cpu">
+      
+            </select>
+            <small class="hidden-txt">cpu</small>
+          
+          </div>
+          </div>
+          <div class="form-control">
+            <label>CPU-ს ბირთვი</label>
+            <input type="text" name="laptop_cpu_cores" id="core" />
+            <small>მხოლოდ ციფრები</small>
+          </div>
+          <div class="form-control">
+            <label for="">CPU-ს ნაკადი</label>
+            <input type="text" name="laptop_cpu_threads" id="threads" />
+            <small>მხოლოდ ციფრები</small>
+          </div>
+        </div>
+
+        <div class="ram">
+          <div class="form-control">
+            <label for="">ლეპტოპის RAM (GB)</label>
+            <input type="text" name="laptop_ram" id="ram" />
+            <small>მხოლოდ ციფრები</small>
+          </div>
+          <div class="form-control">
+            <label class="radio-label">მეხსიერების ტიპი
+               <span class="error-icon"></span>
+            </label>
+            <div class="radio-inputs">
+              <input type="radio" name="laptop_hard_drive_type" class="laptop_hard_drive_type"  id="ssd" />
+              <label for="ssd">SSD</label>
+              <input type="radio"name="laptop_hard_drive_type" class="laptop_hard_drive_type"  id="hdd" />
+              <label for="hdd">HDD</label>
+            </div>
+          </div>
+        </div>
+        <span class="x-line"></span>
+
+        <div class="date-price">
+          <div class="form-control">
+            <label for="">შეძენის რიცხვი (არჩევითი)</label>
+            <input type="date" id="date" name="purchase_date" placeholder="დდ / თთ / წწწწ" />
+            <small class="hidden-txt">მხოლოდ ციფრები</small>
+          </div>
+          <div class="form-control">
+            <label>ლეპტოპის ფასი</label>
+            <input type="text" name="laptop_price" id="price" />
+            <small>მხოლოდ ციფრები</small>
+
+          </div>
+        </div>
+        <div class="condition">
+          <div class="form-control">
+            <label for="">ლეპტოპის მდგომარეობა</label>
+            <div class="radio-inputs">
+              <input type="radio" name="laptop_state" class="laptop_state"  id="new" />
+              <label for="new">ახალი</label>
+              <input type="radio" name="laptop_state" class="laptop_state" id="used" />
+              <label for="used">მეორადი</label>
+            </div>
+          </div>
+        </div><div class="btns">
+          <a href="./userInfo.html" class="transparent-btn">უკან</a>
+          <button class="blue-btn" id="blue-btn">დამახსოვრება</button>
+        </div>
+      </form>
+      
+    </div>
+
+    <img src="./img/LOGO-10 2.png" alt="reberry-logo" class="redberry-logo" />
+    <div class="modal-bg"></div>
+    <div class="modal">
+      <img src="./img/Frame.png" alt="" />
+      <h1 class="txt">ჩანაწერი დამატებულია!</h1>
+      <button class="list-btn" id="list-btn">სიაში გადაყვანა</button>
+      <button class="main-btn" id="main-btn">მთავარი</button>
+    
+  </div>
+    <script 
+      src="https://kit.fontawesome.com/77d29a476f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module"  src="./laptopSpecs.js"></script>
+  </body>
+</html>

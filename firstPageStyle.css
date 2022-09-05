@@ -1,0 +1,51 @@
+@font-face {
+  src: url(./fonts/HelveticaNeue.ttc);
+  font-family: "neue";
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 3rem;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  font-family: "neue";
+  font-size: 1.5rem;
+  width: 25rem;
+  height: 3.75rem;
+  background-color: #62a1eb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 392px) {
+  .main-img {
+    content: url(./img/Group.png);
+    margin-top: 5rem;
+  }
+  .container {
+    gap: 1rem;
+  }
+  a {
+    width: 358px;
+    padding: 0 3rem;
+  }
+  .first-btn {
+    margin-top: 5rem;
+  }
+}

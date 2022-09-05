@@ -1,0 +1,127 @@
+@font-face {
+  src: url(./fonts/HelveticaNeue.ttc);
+  font-family: "neue";
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "neue";
+}
+body {
+  background-color: #f6f6f6;
+}
+
+.nav-container {
+  text-align: center;
+  padding-top: 10rem;
+  height: 3rem;
+  /* font-size: 1.5rem; */
+}
+.nav-container a {
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1.5rem;
+}
+.back-btn {
+  margin-left: 5rem;
+  margin-top: 8rem;
+  padding: 1.5rem;
+  position: absolute;
+  width: 2rem;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.list {
+  font-size: 34px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  grid-column-gap: 64px;
+  grid-row-gap: 64px;
+  padding: 2rem 5rem;
+  margin: 5rem 20rem;
+}
+.item {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: #eafaff;
+  border: 1px solid #bee6f2;
+  border-radius: 1.5rem;
+}
+.item-img {
+  border-radius: 1.5rem;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+.username,
+.item-cpu {
+  font-size: 18px;
+}
+.more {
+  padding-top: 2rem;
+  color: #6fc7e2;
+}
+@media screen and (max-width: 392px) {
+  .nav-container {
+    text-align: center;
+    padding-top: 2rem;
+    height: 5.25rem;
+    background-color: #f6f6f6;
+  }
+  .list {
+    font-size: 16px;
+  }
+  .back-btn {
+    margin-left: 1.5rem;
+    margin-top: 1.7rem;
+    padding: 3px;
+    width: 9.2px;
+    background-color: transparent;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+    margin: 16px;
+    padding: 0;
+  }
+  .item-img {
+    width: 164px;
+    height: 109px;
+    border-radius: 15px;
+  }
+  .item {
+    gap: 1rem;
+    padding: 5px;
+    width: 358px;
+    border-radius: 15px;
+  }
+  .info {
+    gap: 10px;
+    padding-top: 0.5rem;
+  }
+  .username,
+  .item-cpu {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+  .more {
+    padding-top: 8px;
+  }
+}

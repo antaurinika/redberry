@@ -1,0 +1,423 @@
+@font-face {
+  src: url(./fonts/HelveticaNeue.ttc);
+  font-family: "neue";
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "neue";
+}
+body {
+  background-color: #f6f6f6;
+}
+
+.nav-container {
+  text-align: center;
+  padding-top: 10rem;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+.nav-container a {
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1.5rem;
+  position: relative;
+}
+.nav-container .laptop-specs::after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  height: 4px;
+  width: 75%;
+  left: 12%;
+  bottom: -5%;
+}
+
+.back-btn {
+  margin-left: 5rem;
+  margin-top: 8rem;
+  padding: 1.5rem;
+  position: absolute;
+  width: 2rem;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+/* ------form ------------ */
+
+.container {
+  padding: 0 5rem;
+  border: 3px solid white;
+  background-color: #fff;
+  margin: 5rem 20rem;
+  border-radius: 10px;
+}
+
+.photo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%2362A1EBFF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 10px;
+  background-color: #f6f6f6;
+  gap: 3rem;
+  padding: 3rem;
+  height: 423px;
+}
+.photo-container h1 {
+  text-align: center;
+  font-size: 20px;
+  width: 195px;
+  color: #62a1eb;
+}
+
+input[type="file"] {
+  display: none;
+}
+.upload-label {
+  color: #fff;
+  background-color: #62a1eb;
+  width: 233px;
+  padding: 1rem;
+  text-align: center;
+  height: 60px;
+  border-radius: 5px;
+  font-weight: normal;
+}
+.form > * {
+  margin-top: 2rem;
+}
+.brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.brand > .form-control {
+  width: 100vw;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.form-control input {
+  display: block;
+}
+select {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #ebebeb;
+  cursor: pointer;
+}
+select,
+input {
+  height: 60px;
+  border-radius: 5px;
+  box-shadow: none;
+}
+input {
+  border: 2px solid #62a1eb;
+  padding: 15px;
+}
+input,
+input:active {
+  outline: none;
+}
+select,
+label {
+  font-size: 18px;
+  font-weight: 800;
+}
+.hidden-txt {
+  visibility: hidden;
+}
+.x-line {
+  display: flex;
+  height: 1px;
+  width: 100%;
+  border: 1px solid #dddddd;
+  margin: 3rem 0;
+}
+
+.cpu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.cpu > *,
+.ram > * {
+  width: 100%;
+}
+.ram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.radio-inputs {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 1rem;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 800;
+}
+.date-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.date-price > * {
+  width: 100%;
+}
+small {
+  color: #786e6e;
+}
+.condition-txt {
+  font-size: 18px;
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+.blue-btn {
+  color: #fff;
+  background-color: #62a1eb;
+  letter-spacing: 1px;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+.transparent-btn {
+  margin: 1rem 0;
+  border: none;
+  color: #62a1eb;
+  background-color: transparent;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.redberry-logo {
+  position: relative;
+  margin-left: 50%;
+  margin-bottom: 2rem;
+}
+
+.modal {
+  display: none;
+  width: 847px;
+  padding: 1rem 0;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal > .list-btn {
+  border: none;
+  background-color: #62a1eb;
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 297px;
+  font-size: 20px;
+  margin-top: 2rem;
+}
+.modal > .main-btn {
+  background-color: transparent;
+  color: #62a1eb;
+  letter-spacing: 1px;
+  border: none;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+.modal-bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: #4a4a4a;
+  top: 0%;
+  left: 0%;
+  position: absolute;
+  overflow: hidden;
+  display: none;
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.photo-container.displayNone > * {
+  display: none;
+}
+.photo-container.img-size {
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/* --------------validation styling -------------- */
+
+.form-control.error input {
+  border-color: #e52f2f;
+}
+.form-control.error label {
+  color: #e52f2f;
+}
+.form-control.error small {
+  color: #e52f2f;
+}
+.select.error {
+  border: 2px solid #e52f2f;
+}
+.photo-container.error {
+  border: 2px dashed #e52f2f;
+  background: #fff1f1;
+}
+.photo-container.error .upload-icon {
+  content: url(./img/Vector.png);
+  margin-top: 4rem;
+}
+.radio-label.error {
+  color: #e52f2f;
+}
+.radio-label.error .error-icon {
+  content: url(./img/Vector.png);
+  width: 5%;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 392px) {
+  .user-info {
+    display: none;
+  }
+
+  .nav-container {
+    text-align: center;
+    padding-top: 2rem;
+    height: 5.25rem;
+    font-size: 16px;
+    background-color: #f6f6f6;
+  }
+  .back-btn {
+    margin-left: 1.5rem;
+    margin-top: 1.9rem;
+    padding: 3px;
+    width: 9.2px;
+    background-color: transparent;
+    border-radius: 50%;
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 0 1rem;
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+  .photo-container {
+    margin: 29px 16px;
+    gap: 0;
+    padding: 5px;
+    height: 244px;
+  }
+  .upload-icon {
+    content: url(./img/ic_baseline-photo-camera.png);
+  }
+  .upload-label span {
+    display: none;
+  }
+  .upload-label::after {
+    content: "ლეპტოპის ფოტოს ატვირთვა";
+  }
+  .upload-label {
+    width: 80%;
+    text-align: center;
+    margin-top: 1rem;
+    color: #62a1eb;
+    font-weight: normal;
+    background-color: transparent;
+  }
+
+  .photo-container > h1 {
+    display: none;
+  }
+  .form > * {
+    margin-top: 1rem;
+  }
+  .brand {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .brand > .form-control {
+    width: 358px;
+  }
+  .cpu {
+    flex-direction: column;
+  }
+  .ram {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .date-price {
+    flex-direction: column;
+  }
+  .blue-btn {
+    width: 162px;
+  }
+  .redberry-logo {
+    display: none;
+  }
+  .modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0;
+    z-index: 1;
+  }
+  .modal h1 {
+    width: 90%;
+  }
+  .modal .list-btn {
+    margin-top: 8rem;
+  }
+  .active {
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+  }
+  .transparent-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-container .laptop-specs::after {
+    display: none;
+  }
+  .paging::after {
+    content: "2/2";
+    position: relative;
+    height: 5px;
+    color: #898989;
+    font-size: 14px;
+    padding-top: 1rem;
+  }
+}
