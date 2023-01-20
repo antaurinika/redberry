@@ -58,6 +58,8 @@ body {
 }
 .item-img {
   border-radius: 1.5rem;
+  width: 300px;
+  height: 150px;
 }
 .info {
   display: flex;
