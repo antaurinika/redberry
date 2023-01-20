@@ -1,3 +1,3 @@
 # redberry
 
-netlify link: https://antauri-nika-27b187.netlify.app/
+netlify link: https://nika-antauri-3aa4dc.netlify.app/
